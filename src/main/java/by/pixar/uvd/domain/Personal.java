@@ -1,11 +1,6 @@
 package by.pixar.uvd.domain;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.persistence.GeneratedValue;
-import java.util.Date;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "PERSONAL")
@@ -29,40 +24,11 @@ public class Personal {
     @Column(name = "SECONDNAME")
     private String secondName ;
 
-    //'Звание'
-    @Column(name = "RANK")
-    private String rank ;
 
-    //'Дата рождения'
-    @Column(name = "BIRTHDAY")
-    private Date birthday;
-
-    //'Место рождения'
-    @Column(name = "PLACEOFBORN")
-    private String placeOfBorn;
-
-    //'Образование'
-    @Column(name = "EDUCATION")
-    private String education;
-
-    //'Окончил'
-    @Column(name = "GRADUATED")
-    private String graduated;
-
-    //'Специальность'
-    @Column(name = "SPECIALITY")
-    private String speciality;
 
 
     // Getters and setters
 
-    public String getSpeciality() {
-        return speciality;
-    }
-
-    public void setSpeciality(String speciality) {
-        this.speciality = speciality;
-    }
 
     public Integer getId() {
         return id;
@@ -96,43 +62,5 @@ public class Personal {
         this.secondName = secondName;
     }
 
-    public String getRank() {
-        return rank;
-    }
 
-    public void setRank(String rank) {
-        this.rank = rank;
-    }
-
-    public Date getBirthday() {
-        return birthday;
-    }
-
-    public void setBirthday(Date birthday) {
-        this.birthday = birthday;
-    }
-
-    public String getPlaceOfBorn() {
-        return placeOfBorn;
-    }
-
-    public void setPlaceOfBorn(String placeOfBorn) {
-        this.placeOfBorn = placeOfBorn;
-    }
-
-    public String getEducation() {
-        return education;
-    }
-
-    public void setEducation(String education) {
-        this.education = education;
-    }
-
-    public String getGraduated() {
-        return graduated;
-    }
-
-    public void setGraduated(String graduated) {
-        this.graduated = graduated;
-    }
 }

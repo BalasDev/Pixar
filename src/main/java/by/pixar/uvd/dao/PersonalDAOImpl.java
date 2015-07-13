@@ -18,12 +18,12 @@ public class PersonalDAOImpl implements PersonalDAO {
         sessionFactory.getCurrentSession().save(personal);
     }
 
-    @Override
+
     public List<Personal> listPersonal() {
         return sessionFactory.getCurrentSession().createQuery("from PERSONAL").list();
     }
 
-    @Override
+
     public void deletePersonal(Integer id) {
         Personal personal = (Personal) sessionFactory.getCurrentSession().load(Personal.class, id);
         if (null != personal) {
