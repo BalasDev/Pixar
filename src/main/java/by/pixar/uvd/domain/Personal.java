@@ -1,14 +1,10 @@
 package by.pixar.uvd.domain;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.persistence.GeneratedValue;
-import java.util.Date;
+import javax.persistence.*;
 
 @Entity
-@Table(name = "PERSONAL")
+@Table(name = "personal")
+
 public class Personal {
 
     // ID
@@ -27,8 +23,9 @@ public class Personal {
 
     //'Отчество'
     @Column(name = "SECONDNAME")
-    private String secondName ;
+    private String secondName;
 
+    /*
     //'Звание'
     @Column(name = "RANK")
     private String rank ;
@@ -53,9 +50,9 @@ public class Personal {
     @Column(name = "SPECIALITY")
     private String speciality;
 
-
+*/
     // Getters and setters
-
+/*
     public String getSpeciality() {
         return speciality;
     }
@@ -67,7 +64,7 @@ public class Personal {
     public Integer getId() {
         return id;
     }
-
+*/
     public void setId(Integer id) {
         this.id = id;
     }
@@ -95,7 +92,7 @@ public class Personal {
     public void setSecondName(String secondName) {
         this.secondName = secondName;
     }
-
+/*
     public String getRank() {
         return rank;
     }
@@ -135,4 +132,5 @@ public class Personal {
     public void setGraduated(String graduated) {
         this.graduated = graduated;
     }
+*/
 }
